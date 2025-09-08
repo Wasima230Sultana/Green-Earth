@@ -54,6 +54,7 @@ Use remove/filter out elements based on a condition.<br>
 <h4></h4>
 <p>
 Arrow functions are a shorter way to write functions introduced in ES6.Useful in callbacks and array methods (map, filter, forEach).<br>
+Example:<br>
 // Normal function <br>
 function add(a, b) { <br>
   return a + b;<br>
@@ -72,10 +73,10 @@ Destructuring allows to extract values from arrays or objects into variables in 
 Basic Assignment: Values are assigned based on their position within the array.<br>
 Skipping Elements: Commas can be used to skip elements in the array.<br>
 Default Values: Default values can be assigned if an element is undefined.<br>
-Example :
+Example :<br>
     let [first, second] = [10, 20];<br>
-    console.log(first);  // 10<br>
-    console.log(second); // 20<br>
+    console.log(first);   // 10<br>
+    console.log(second);  // 20<br>
 </p>
 <p>
 <h4>Object Destructuring:</h4>
@@ -102,15 +103,18 @@ String interpolation:
 They allow embedding expressions (variables, function calls, arithmetic operations, etc.) directly within the string using the ${expression} syntax. This is often referred to as "string interpolation."<br>
 
 <h3>How they differ from string concatenation:</h3>
-1.Readability and Maintainability:
-String Concatenation (using + operator): Can become cumbersome and less readable when dealing with multiple variables and complex expressions, leading to long chains of + operators and quotes.
-Template Literals: Offer a more concise and readable syntax for embedding dynamic content directly within the string, improving code clarity, especially for complex strings.<br>
-2.Multi-line Support:
-String Concatenation: Requires explicit \n characters for line breaks, making multi-line strings less intuitive to write.
-Template Literals: Natively support multi-line strings, preserving line breaks as typed within the backticks.<br>
-3.Expression Embedding:
-String Concatenation: Requires breaking the string, concatenating the variable, and then resuming the string.
-Template Literals: Allow seamless embedding of any valid JavaScript expression directly within the ${} placeholder, which is evaluated and inserted into the string.<br>
+Readability & Maintainability:<br>
+Concatenation: Becomes cumbersome with multiple variables or complex expressions.<br>
+Template Literals: More concise and easier to read/maintain.<br>
+
+Multi-line Support: <br>
+Concatenation: Requires explicit \n for line breaks.<br>
+Template Literals: Directly supports multi-line strings with preserved formatting.<br>
+
+Expression Embedding: <br>
+Concatenation: Requires breaking the string and joining variables or expressions manually.<br>
+Template Literals: Allows seamless embedding of variables and expressions inside ${}.
+<br>
 </p>
 </p>
 <hr>
