@@ -127,6 +127,7 @@ manageSpinner(false);
       .getElementById(`add-cart-${post.id}`)
       .addEventListener("click", () => {
         cartClick(post);
+        alert(post.name + " has been added to the cart");
       });
   });
 };
@@ -146,8 +147,6 @@ const displayCart = () => {
 
   cart.forEach((item, index) => {
     totalPrice += item.price; 
-alert(item.name + " has been added to the cart");
-
     const cartDiv = document.createElement("div");
     cartDiv.innerHTML = `
       <div class="flex justify-between items-center bg-[#F0FDF4] p-4 m-4 rounded-lg">
